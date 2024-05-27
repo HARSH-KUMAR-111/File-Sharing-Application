@@ -1,4 +1,5 @@
 import React from 'react'
+import Constant from '../_utils/Constant'
 
 function FirstPage() {
   return (
@@ -12,9 +13,9 @@ function FirstPage() {
   
           <span className="sm:block"> Upload, Save and Share files   </span>
         </h1>
-  
+          
         <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">
-        Drag and drop your file directly on our cloud and share it with your friends securely with password and send it on email
+           {Constant.desc} 
         </p>
   
         <div className="mt-8 flex flex-wrap justify-center gap-4">

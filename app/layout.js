@@ -1,8 +1,18 @@
 // @ts-nocheck
-import { Inter } from "next/font/google";
-import "./globals.css";
-import Header from "./_components/Header";
-const inter = Inter({ subsets: ["latin"] });
+// {Outfit} is used to change the font of the page
+import { Inter,Outfit,Teko } from "next/font/google"
+import "./globals.css"
+import Header from "./_components/Header"
+import {
+  ClerkProvider,
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
+
+//Here we used outfit font
+const inter = Outfit({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -11,11 +21,14 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
 
+    <ClerkProvider>
+     <html lang="en">
+      <body className={inter.className}>
         {children}
         </body>
-    </html>
+     </html>
+    </ClerkProvider>
+
   );
 }
