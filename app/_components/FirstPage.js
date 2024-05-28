@@ -7,11 +7,14 @@ function FirstPage() {
     <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
       <div className="mx-auto max-w-3xl text-center">
         <h1
-          className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
+          className="bg-gradiennt-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text text-3xl font-extrabold text-transparent sm:text-5xl"
         >
           <span className="text-white">Hey, My Name is</span> <span className='text-gray-600'>Harsh</span>
   
-          <span className="sm:block"> Upload, Save and Share files   </span>
+          <span className="sm:block bg-gradient-to-r from-green-300 via-blue-500  to-purple-600 text-transparent bg-clip-text">
+  Upload, Save and Share files
+</span>
+
         </h1>
           
         <p className="mx-auto mt-4 max-w-xl sm:text-xl/relaxed">

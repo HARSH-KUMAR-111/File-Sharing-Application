@@ -7,6 +7,7 @@ import {
   ClerkProvider,
   SignInButton,
   SignedIn,
+  SignIn,
   SignedOut,
   UserButton
 } from '@clerk/nextjs'
@@ -21,11 +22,10 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-
     <ClerkProvider>
      <html lang="en">
       <body className={inter.className}>
-        {children}
+              {children}
         </body>
      </html>
     </ClerkProvider>
